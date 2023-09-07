@@ -23,7 +23,7 @@ void setup() {
 void loop() {
   bool can_deep_sleep = sleep_manager_can_deep_sleep();
   Serial.print("Mbed can deep sleep: ");
-  can_deep_sleep ? Serial.println("No") : Serial.println("Yes");
+  can_deep_sleep ? Serial.println("Yes") : Serial.println("No");
 
   uint16_t numLocks = getDeepSleepLockNumber();
   Serial.print("Number of active deep sleep locks: ");
