@@ -21,7 +21,7 @@ void setup() {
   // Turn off USB
   USBPhy *phy = get_usb_phy();
   phy->deinit();
-  // Turn of micros() timer
+  // Turn off micros() timer
   getTimer(TIMER).stop();
 }
 
