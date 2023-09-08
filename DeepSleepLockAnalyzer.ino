@@ -12,7 +12,7 @@
 
 uint16_t getDeepSleepLockNumber()
 {
-  return *((uint32_t*) *((uint32_t*) ((((uint32_t) &sleep_manager_can_deep_sleep) & 0xfffffffe) + 0x10)));
+  return *((uint16_t*) *((uint32_t*) ((((uint32_t) &sleep_manager_can_deep_sleep) & 0xfffffffe) + 0x10)));
 }
 
 void setup() {
